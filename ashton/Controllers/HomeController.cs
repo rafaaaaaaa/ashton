@@ -3,28 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ashton.Models;
+using NHibernate;
 
 namespace ashton.Controllers
 {
 	public class HomeController : Controller
 	{
-		public ActionResult Index()
-		{
-			return View();
-		}
+		public List<Assignment> Assignment { get; private set; }
 
-		public ActionResult About()
+		public ActionResult AshtonHome()
 		{
-			ViewBag.Message = "Your application description page.";
+			using (ISession session = NhibernateSession.OpenSession())  // Open  a session to conect to the database
+			{
+				Assignment = session.Query<Assignment>().ToList(); //  Querying to get all the assignments
+			}
 
-			return View();
-		}
-
-		public ActionResult Contact()
-		{
-			ViewBag.Message = "Your contact page.";
+			
 
 			return View();
-		}
+		}	
 	}
 }
