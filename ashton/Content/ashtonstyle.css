@@ -1,47 +1,59 @@
 ﻿.Menubar {
-
-
-  display: table;
-  position: absolute;
-  height: 160%;
+  position: fixed;
+  height: 190px;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 
 .ashtonbarform {
-  width: 30%;
+  background: #41f49d;
   height: 100px;
-  -ms-transform: skew(20deg);
-  -webkit-transform: skew(20deg);
-  transform: skew(20deg);
-  background: #42f495;
+  width: calc(50% - 102.5px);
   float: left;
   position: relative;
   top: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
 }
 
-.ashtonbarformmirrored {
-  width: 30%;
+.ashtonbarform2 {
+  background: #41f49d;
   height: 100px;
-  -ms-transform: skewX(-20deg); /* IE 9 */
-  -webkit-transform: skewX(-20deg); /* Safari */
-  transform: skewX(-20deg); /* Standard syntax */
-  background: #42f495;
+  width: calc(50% - 102.5px);
   float: left;
-  display: inline-block;
-  vertical-align: middle; 
-         
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
 
 .ashtonbarformcircle {
-  width: 160px;
-  height: 160px;
-  background: #41f49d;
-  -moz-border-radius: 160px;
-  -webkit-border-radius: 160px;
+  height: 100px;
+  width: 240px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
   display: inline-block;
-  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 15px;
+  margin-right: 15px;
+
+
+  background: #41f49d;
+  width: 175px;
+  height: 175px;
+  -moz-border-radius: 125px;
+  -webkit-border-radius: 125px;
+  border-radius: 125px;
 }
