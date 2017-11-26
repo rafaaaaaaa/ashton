@@ -162,6 +162,7 @@
     <Compile Include="Database\Entities\Assignment.cs" />
     <Compile Include="Database\NhibernateSession.cs" />
     <Compile Include="Models\MainPageModel.cs" />
+    <Compile Include="Models\TopBarModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -194,6 +195,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Home\AshtonHome.cshtml" />
+    <Content Include="Views\SiteGround\TopBar.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

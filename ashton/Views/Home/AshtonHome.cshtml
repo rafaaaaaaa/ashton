@@ -1,15 +1,29 @@
 ﻿@model ashton.Models.MainPageModel
 
 @{
-    ViewBag.Title = "AshtonHome";
+  ViewBag.Title = "AshtonHome";
 }
 
-<h2>AshtonHome</h2>
 
-@foreach (var moddel in Model.Assignments)
-{
-  
-  <p> @moddel.AssignmentName </p>
+<head>
+  <link href="@Url.Content("~/Content/ashtonstyle.css")" rel="stylesheet" type="text/css" />
+</head>
 
-}
+<div class="Menubar">
+        <div class="ashtonbarform">
+
+        </div>
+
+        <div class="ashtonbarformcircle">
+
+        </div>
+
+
+        <div class="ashtonbarformmirrored">
+
+        </div>
+</div>
+
+
+
 

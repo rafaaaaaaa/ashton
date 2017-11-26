@@ -1,12 +1,47 @@
-﻿body {
+﻿.Menubar {
+
+
+  display: table;
+  position: absolute;
+  height: 160%;
+  width: 100%;
 }
 
-.div1 {
-  background-color: blue;
-  text-align: right;
-  color: blue;
+
+.ashtonbarform {
+  width: 30%;
+  height: 100px;
+  -ms-transform: skew(20deg);
+  -webkit-transform: skew(20deg);
+  transform: skew(20deg);
+  background: #42f495;
+  float: left;
+  position: relative;
+  top: 50%;
 }
 
-.div2 {
-  background-color: red;
+.ashtonbarformmirrored {
+  width: 30%;
+  height: 100px;
+  -ms-transform: skewX(-20deg); /* IE 9 */
+  -webkit-transform: skewX(-20deg); /* Safari */
+  transform: skewX(-20deg); /* Standard syntax */
+  background: #42f495;
+  float: left;
+  display: inline-block;
+  vertical-align: middle; 
+         
+}
+
+.ashtonbarformcircle {
+  width: 160px;
+  height: 160px;
+  background: #41f49d;
+  -moz-border-radius: 160px;
+  -webkit-border-radius: 160px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
 }
