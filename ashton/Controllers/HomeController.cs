@@ -19,9 +19,9 @@ namespace ashton.Controllers
 				Assignment = session.Query<Assignment>().ToList(); //  Querying to get all the assignments
 			}
 
-			MainPageModel mainpagemodel = new MainPageModel(Assignment);
+		
 
-			return View(mainpagemodel);
+			return View();
 		}	
 	}
 }
