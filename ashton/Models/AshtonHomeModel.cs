@@ -5,11 +5,11 @@ using System.Web;
 
 namespace ashton.Models
 {
-	public class MainPageModel
+	public class AshtonHomeModel
 	{
 		private List<Assignment> _assignments;
 
-		public MainPageModel(List<Assignment> assignments)
+		public AshtonHomeModel(List<Assignment> assignments)
 		{
 			_assignments = assignments;
 		}
