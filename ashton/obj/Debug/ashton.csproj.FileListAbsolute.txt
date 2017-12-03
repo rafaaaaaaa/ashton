@@ -56,3 +56,4 @@ C:\Users\rafael\Documents\Business\ashton\ashton\obj\Debug\ashton.csproj.Generat
 C:\Users\rafael\Documents\Business\ashton\ashton\obj\Debug\ashton.csproj.CoreCompileInputs.cache
 C:\Users\rafael\Documents\Business\ashton\ashton\obj\Debug\ashton.dll
 C:\Users\rafael\Documents\Business\ashton\ashton\obj\Debug\ashton.pdb
+C:\Users\rafael\Documents\Business\ashton\ashton\obj\Debug\ashton.csprojResolveAssemblyReference.cache

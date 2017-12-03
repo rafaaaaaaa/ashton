@@ -58,9 +58,11 @@ body {
   border-radius: 125px;
 }
 
+
+
 .DataSector {
-  position: center;
   height: 100%;
-  width: 70%;
-  background-color: lightblue;
+  width: 60%;
+  background-color: #e7fef3;
+  margin: auto;
 }
