@@ -19,9 +19,13 @@ namespace ashton.Controllers
 				Assignment = session.Query<Assignment>().ToList(); //  Querying to get all the assignments
 			}
 
-		
-
 			return View();
-		}	
+		}
+
+		[HttpGet]
+		public PartialViewResult SignUp()
+		{
+			return PartialView();
+		}
 	}
 }

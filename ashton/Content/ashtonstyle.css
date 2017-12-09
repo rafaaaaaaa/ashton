@@ -1,5 +1,4 @@
 ﻿.Menubar {
-  position: fixed;
   height: 190px;
   width: 100%;
   margin: 0;
@@ -58,6 +57,9 @@ body {
   border-radius: 125px;
 }
 
+.div {
+  position: relative;
+}
 
 
 .DataSector {
@@ -65,4 +67,8 @@ body {
   width: 60%;
   background-color: #e7fef3;
   margin: auto;
+}
+
+.SignUpDialog {
+  background: blueviolet;
 }

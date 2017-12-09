@@ -1,7 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@model ashton.Models.TopBarModel
+<!DOCTYPE html>
 <html>
 <head>
   <link href="@Url.Content("~/Content/ashtonstyle.css")" rel="stylesheet" type="text/css" />
+  
+ @*<link href="~/Css/jquery-ui.css" type="text/css" rel="stylesheet"/>
+  <script src="~/Scripts/jquery-ui.js"></script>
+  <script src="~/Scripts/jquery-ui.min.js"></script>*@
 </head>
 
 <body>
@@ -22,11 +27,13 @@
 
 
 <div class="DataSector">
-  @RenderBody()
+
 </div>
-
-
+  
+@*<div class="table-responsive"></div>*@
 
 </body>
 </html>
+
+@RenderBody()
 
