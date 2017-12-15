@@ -22,7 +22,6 @@ namespace ashton.Controllers
 			return View();
 		}
 
-		[HttpGet]
 		public PartialViewResult SignUp()
 		{
 			return PartialView();

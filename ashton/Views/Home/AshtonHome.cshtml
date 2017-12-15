@@ -7,41 +7,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Dialog - Default functionality</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-    $( function() {
-      $( "#dialog" ).dialog();
-    } );
-  </script>
-  
-  
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $("#result").dialog({
-        autoOpen: false,
-        title: 'Title',
-        width: 500,
-        height: 'auto',
-        modal: true
-      });
-    });
-    function openPopup() {
-      $("#result").dialog("open");
-    }
-  </script>
 </head>
 
 <h2>AshtonHome</h2>
 
 <h3>SignUp</h3>
-
-<input type="button" name="Add" value="Sign Up" size="40"/>
-
-@Ajax.ActionLink("Open popup", "SignUp", new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "result", InsertionMode = InsertionMode.Replace, OnSuccess="openPopup" })<br />
-
-<div id="result" style="display:none;"></div>

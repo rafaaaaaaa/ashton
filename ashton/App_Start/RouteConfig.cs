@@ -15,7 +15,7 @@ namespace ashton
 
 			routes.MapRoute(
 					name: "Default",
-					url: "{controller}/{action}",
+					url: "{action}",
 					defaults: new { controller = "Home", action = "AshtonHome" }
 			);
 		}

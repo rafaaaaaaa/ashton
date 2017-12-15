@@ -10,11 +10,16 @@ body {
   margin: 0;
   padding: 0;
 }
+.PopUp {
+  background: lightgreen;
+  height: 40px;
+  width: 70px;
+}
 
 
 .ashtonbarform {
   background: #41f49d;
-  height: 100px;
+  height: 85px;
   width: calc(50% - 102.5px);
   float: left;
   position: relative;
@@ -26,7 +31,7 @@ body {
 
 .ashtonbarform2 {
   background: #41f49d;
-  height: 100px;
+  height: 85px;
   width: calc(50% - 102.5px);
   float: left;
   margin: 0;
@@ -38,7 +43,7 @@ body {
 
 
 .ashtonbarformcircle {
-  height: 100px;
+  height: 150px;
   width: 240px;
   float: left;
   display: inline-block;
@@ -70,5 +75,6 @@ body {
 }
 
 .SignUpDialog {
+
   background: blueviolet;
 }
