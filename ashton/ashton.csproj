@@ -186,6 +186,8 @@
     <Compile Include="Database\Entities\Assignment.cs" />
     <Compile Include="Database\NhibernateSession.cs" />
     <Compile Include="Models\AshtonHomeModel.cs" />
+    <Compile Include="Models\AssignmentListModel.cs" />
+    <Compile Include="Models\AssignmentModel.cs" />
     <Compile Include="Models\SignUpModel.cs" />
     <Compile Include="Models\TopBarModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -201,6 +203,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\layout.css" />
     <Content Include="Css\AUTHORS.txt" />
     <Content Include="Css\bootstrap-grid.css" />
     <Content Include="Css\bootstrap-grid.min.css" />
@@ -243,7 +246,9 @@
     <Content Include="Scripts\jquery-ui.theme.css" />
     <Content Include="Scripts\jquery-ui.theme.min.css" />
     <Content Include="Scripts\LICENSE.txt" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -258,9 +263,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Account\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Css\bootstrap-grid.css.map" />
     <Content Include="Css\bootstrap-grid.min.css.map" />
@@ -277,6 +280,7 @@
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\package.json" />
     <Content Include="Views\Home\SignUp.cshtml" />
+    <Content Include="Views\Assignment\AssignmentList.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -18,8 +18,9 @@ namespace ashton.Controllers
 			{
 				Assignment = session.Query<Assignment>().ToList(); //  Querying to get all the assignments
 			}
+			var model = new AshtonHomeModel(Assignment);
 
-			return View();
+			return View(model);
 		}
 
 		public PartialViewResult SignUp()

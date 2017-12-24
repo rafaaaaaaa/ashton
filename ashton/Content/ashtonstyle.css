@@ -1,86 +1,37 @@
-﻿.Menubar {
-  height: 190px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  vertical-align: middle;
-}
-
+﻿
 body {
   margin: 0;
   padding: 0;
 }
-.PopUp {
-  background: lightgreen;
-  height: 40px;
-  width: 70px;
-}
 
-
-.ashtonbarform {
-  background: #41f49d;
-  height: 85px;
-  width: calc(50% - 115px);
-  float: left;
-  position: relative;
-  top: 50%;
-  margin: 0;
-  padding: 0;
-  transform: translateY(-50%);
-}
-
-.ashtonbarform2 {
-  background: #41f49d;
-  height: 85px;
-  width: calc(50% - 115px);
-  float: right;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-
-.ashtonbarformcircle {
-  height: 150px;
-  border: 2px solid darkgray;
-  border-color: black;
-  width: 210px;
-  display: inline-block;
-  position: relative;
-  margin-left: 22px;
-  margin-right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #41f49d;
-  width: 175px;
-  height: 175px;
-  -moz-border-radius: 125px;
-  -webkit-border-radius: 125px;
-  border-radius: 125px;
-}
 
 .div {
   position: relative;
 }
 
-.footer {
-  position:relative
-  bottom:0;
-  width:100%;
-  height:40px;   /* Height of the footer */
-  background: darkgreen;
-}
 
 .DataSector {
   height: 1100px;
   width: 60%;
-  background-color: black;
+  border: darkblue;
+  border: 4px;
+  background: white;
   margin: auto;
 }
 
-.SignUpDialog {
+.assignment {
+  border: black;
+  border-width: thick;
+  width: 100%;
+  height: 5px;
+  margin: 10px;
+}
 
-  background: blueviolet;
+
+#assignmentsearch {
+  margin: auto;
+  width: 550px;
+  background-color: blue;
+  height: 60px;
+  margin-top: 40px;
 }

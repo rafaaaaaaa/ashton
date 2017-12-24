@@ -1,14 +1,34 @@
-﻿@model ashton.Models.AshtonHomeModel
+﻿@using ashton.Models
+@model ashton.Models.AshtonHomeModel
 
 @{
     ViewBag.Title = "AshtonHome";
-    Layout = "~/Views/Layout/AsthonLayout.cshtml";
+    Layout = "~/Views/Layout/asthonLayout.cshtml";
+
 }
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/ashtonstyle.css")"/>
+  <script src="https://use.fontawesome.com/8a31748523.js"></script>
 </head>
+
+<body>
+<div id="assignmentsearch">
+  <div id=""></div>
+  <div></div>
+</div>
+
+
+<div class="DataSector">
+  @foreach (var assigment in Model.Assignments)
+  {
+    <div class="assignment">@assigment.AssignmentName</div>
+  }
+</div>
 
 <h2>AshtonHome</h2>
 
 <h3>SignUp</h3>
+  
+</body>
