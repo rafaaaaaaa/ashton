@@ -10,11 +10,11 @@ namespace ashton.Models
 		public List<AssignmentModel> Assigments;
 		public AssignmentListModel(List<Assignment> assignments)
 		{
-			Assigments = new List<AssignmentModel>();
-			foreach (Assignment assigment in assignments)
-			{
-				createassignment(assigment);
-			}
+			//Assigments = new List<AssignmentModel>();
+			//foreach (Assignment assigment in assignments)
+			//{
+			//	createassignment(assigment);
+			//}
 		}
 
 
