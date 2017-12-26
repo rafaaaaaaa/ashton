@@ -11,13 +11,14 @@ namespace ashton
 	{
 		public static ISession OpenSession()
 		{
-			var configuration = new Configuration();
-			var configurationPath = HttpContext.Current.Server.MapPath(@"~\Database\hibernate.cfg.xml");
-			configuration.Configure(configurationPath);
-			var assignmentconfigfile = HttpContext.Current.Server.MapPath(@"~\Database\Mappings\Assignment.hbm.xml");
-			configuration.AddFile(assignmentconfigfile);
-			ISessionFactory sessionFactory = configuration.BuildSessionFactory();
-			return sessionFactory.OpenSession();
+            //var configuration = new Configuration();
+            //var configurationPath = HttpContext.Current.Server.MapPath(@"~\Database\hibernate.cfg.xml");
+            //configuration.Configure(configurationPath);
+            //var assignmentconfigfile = HttpContext.Current.Server.MapPath(@"~\Database\Mappings\Assignment.hbm.xml");
+            //configuration.AddFile(assignmentconfigfile);
+            //ISessionFactory sessionFactory = configuration.BuildSessionFactory();
+            //return sessionFactory.OpenSession();
+            return null;
 		}
 	}
 }

@@ -9,26 +9,53 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/ashtonstyle.css")"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/ashtonstyle.css")" />
+  <link rel="stylesheet" href="@Url.Content("~/Content/search.css")">
+  <link rel="stylesheet" href="@Url.Content("~/Content/assignmentsearchresult.css")">
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Antic'>
   <script src="https://use.fontawesome.com/8a31748523.js"></script>
 </head>
 
-<body>
-<div id="assignmentsearch">
-  <div id=""></div>
-  <div></div>
-</div>
+<body>  
+     
+            <div id="assignmentsearch">
+                <div>
+                    <div id="searchicon"><i class="fa fa-search fa-2x" aria-hidden="true"></i></div>
+                    <div align="center">
+                        <input class="button" placeholder="search assignments..." autofocus="autofocus" />
+                        <script src='https://use.edgefonts.net/amaranth.js'></script>
 
+                    </div>
+                </div>
+            </div>
 
-<div class="DataSector">
-  @foreach (var assigment in Model.Assignments)
-  {
-    <div class="assignment">@assigment.AssignmentName</div>
-  }
-</div>
-
-<h2>AshtonHome</h2>
-
-<h3>SignUp</h3>
-  
+            <div class="DataSector">
+                    @foreach (var assignment in Model.Assignments)
+                    {
+                        <div id="assignmentcontainer">
+                            <table>
+                                <tr>
+                                    <td class="container">
+                                                    <p id="label">Assignment Number</p>
+                                                    <p id="assignmentname">#@assignment.AssignmentID</p> 
+                                    </td>
+                                    <td><p id="assignmentname">@assignment.AssignmentName</p></td>
+                                    <td></td>
+                                    <td>
+                                        <p id="karmapoints">@assignment.KarmaValue<i class="fa fa-dot-circle-o" aria-hidden="true" id="karmalogo"></i></p> 
+                                    </td>
+                                </tr>
+                                <tr>                                    
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    }               
+            </div>    
 </body>
+
+
+
