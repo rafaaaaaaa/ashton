@@ -10,7 +10,6 @@
 body { 
   margin: 0;
   padding: 0;
-  background-color: #C1DAD6;
 }
 .ashtonmenubar {
   background-color: #FF9900;
@@ -44,6 +43,7 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  min-width = 100px;
 }
 
 .menu {
@@ -61,7 +61,7 @@ body {
 }
 
 .btn .fa {
-  background-color: #fff;
+  color: #fff;
   background: #000;
   width: 42px;
   height: 42px;
@@ -83,3 +83,72 @@ body {
   margin: auto;
 }
 
+#MenupointsIcon {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 160px;
+    background-color: transparent;
+}
+
+.dropdown {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 192px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content div {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content div:hover {
+            background-color: black;
+            color: white;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+    border-bottom-color: black;
+    border-bottom-style: inset;
+    border-bottom-width: 2px;
+}
+
+#menuname{
+}
+
+#test
+{
+    color: #000;
+}
+
+#footer{
+    height: 100px;
+    background-color: yellow;
+}

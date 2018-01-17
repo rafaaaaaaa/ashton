@@ -204,6 +204,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\https___s3_us_west_2_amaz.css" />
     <Content Include="Content\layout.css" />
     <Content Include="Content\search.css" />
     <Content Include="Css\AUTHORS.txt" />
@@ -239,6 +240,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\index.html" />
+    <Content Include="Scripts\index.js" />
     <Content Include="Scripts\jquery-ui.css" />
     <Content Include="Scripts\jquery-ui.js" />
     <Content Include="Scripts\jquery-ui.min.css" />

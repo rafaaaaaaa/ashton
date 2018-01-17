@@ -96,9 +96,13 @@ input:focus {
 #searchicon {
     float: left;
     top: 50%;
-    transform: translateY(-50%);
 }
 
 
+#container {
+    margin-left: 50px;
+    background-color: yellow;
+    width: 300px;
+}
 
 

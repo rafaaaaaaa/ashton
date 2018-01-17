@@ -3,59 +3,87 @@
 
 @{
     ViewBag.Title = "AshtonHome";
-    Layout = "~/Views/Layout/asthonLayout.cshtml";
-
+    Layout = "~/Views/Layout/AsthonLayout.cshtml";
 }
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/ashtonstyle.css")" />
-  <link rel="stylesheet" href="@Url.Content("~/Content/search.css")">
-  <link rel="stylesheet" href="@Url.Content("~/Content/assignmentsearchresult.css")">
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Antic'>
-  <script src="https://use.fontawesome.com/8a31748523.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/ashtonstyle.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/search.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/assignmentsearchresult.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/https___s3_us_west_2_amaz.css")">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet prefetch' href='css/https___s3_us_west_2_amaz.css'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Antic'>
+    <script src="https://use.fontawesome.com/8a31748523.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet prefetch' href='css/https___s3_us_west_2_amaz.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
+<script>
+    function ChangeMenubar() {
+        @*if (window.innerHeight < 1000) {
+            @layout =   Layout = "~/Views/Layout/AsthonLayoutClosed.cshtml";
+        }
+        else 
+        {
+            @layout =   Layout = "~/Views/Layout/AsthonLayout.cshtml";
+        }*@
+    }
+</script>
 
-<body>  
-     
-            <div id="assignmentsearch">
-                <div>
-                    <div id="searchicon"><i class="fa fa-search fa-2x" aria-hidden="true"></i></div>
-                    <div align="center">
-                        <input class="button" placeholder="search assignments..." autofocus="autofocus" />
-                        <script src='https://use.edgefonts.net/amaranth.js'></script>
+<body>
+    <div class="btn" onh="ChangeMenubar"></div>
 
-                    </div>
-                </div>
+    <div id="assignmentsearch">
+
+        <div>
+            <div id="searchicon"><i class="fa fa-search fa-4x" aria-hidden="true"></i></div>
+            <div align="center" id="container">
+                @*<input class="button" placeholder="search assignments..." autofocus="autofocus" />
+                    <script src='https://use.edgefonts.net/amaranth.js'></script>*@
             </div>
 
-            <div class="DataSector">
-                    @foreach (var assignment in Model.Assignments)
-                    {
-                        <div id="assignmentcontainer">
-                            <table>
-                                <tr>
-                                    <td class="container">
-                                                    <p id="label">Assignment Number</p>
-                                                    <p id="assignmentname">#@assignment.AssignmentID</p> 
-                                    </td>
-                                    <td><p id="assignmentname">@assignment.AssignmentName</p></td>
-                                    <td></td>
-                                    <td>
-                                        <p id="karmapoints">@assignment.KarmaValue<i class="fa fa-dot-circle-o" aria-hidden="true" id="karmalogo"></i></p> 
-                                    </td>
-                                </tr>
-                                <tr>                                    
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                        </div>
-                    }               
-            </div>    
+
+        </div>
+    </div>
+
+    <div class="DataSector">
+        @foreach (var assignment in Model.Assignments)
+                {
+                <div id="assignmentcontainer">
+                    <table>
+                        <tr>
+                            <td class="container">
+                                <p id="label">Assignment Number</p>
+                                <p id="assignmentname">#@assignment.AssignmentID</p>
+                            </td>
+                            <td><p id="assignmentname">@assignment.AssignmentName</p></td>
+                            <td></td>
+                            <td>
+                                <p id="karmapoints">@assignment.KarmaValue<i class="fa fa-dot-circle-o" aria-hidden="true" id="karmalogo"></i></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                }
+    </div>
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2542/in-view.min.js'></script>
+
+    <script src="~/Scripts/index.js"></script>
 </body>
+
 
 
 

@@ -73,11 +73,6 @@ C:\Users\rafael\Documents\Business\ashton\ashton\obj\Debug\ashton.csproj.CoreCom
 C:\Users\rafael\Documents\Business\ashton\ashton\obj\Debug\ashton.dll
 C:\Users\rafael\Documents\Business\ashton\ashton\obj\Debug\ashton.pdb
 C:\Users\rafael\Documents\Business\ashton\ashton\obj\Debug\ashton.csprojResolveAssemblyReference.cache
-C:\Users\Alois Estermann\Desktop\ashton-project\ashton\obj\Debug\ashton.csprojResolveAssemblyReference.cache
-C:\Users\Alois Estermann\Desktop\ashton-project\ashton\obj\Debug\ashton.Properties.Resources.resources
-C:\Users\Alois Estermann\Desktop\ashton-project\ashton\obj\Debug\ashton.csproj.GenerateResource.Cache
-C:\Users\Alois Estermann\Desktop\ashton-project\ashton\obj\Debug\ashton.dll
-C:\Users\Alois Estermann\Desktop\ashton-project\ashton\obj\Debug\ashton.pdb
 C:\Users\Alois Estermann\Desktop\ashton-project\ashton\bin\ApplicationInsights.config
 C:\Users\Alois Estermann\Desktop\ashton-project\ashton\bin\ashton.dll.config
 C:\Users\Alois Estermann\Desktop\ashton-project\ashton\bin\ashton.dll
@@ -147,3 +142,7 @@ C:\Users\Alois Estermann\Desktop\ashton-project\ashton\bin\de\System.Web.Razor.r
 C:\Users\Alois Estermann\Desktop\ashton-project\ashton\bin\de\System.Web.WebPages.resources.dll
 C:\Users\Alois Estermann\Desktop\ashton-project\ashton\bin\de\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Alois Estermann\Desktop\ashton-project\ashton\bin\de\System.Web.WebPages.Razor.resources.dll
+C:\Users\Alois Estermann\Desktop\ashton-project\ashton\obj\Debug\ashton.Properties.Resources.resources
+C:\Users\Alois Estermann\Desktop\ashton-project\ashton\obj\Debug\ashton.csproj.GenerateResource.Cache
+C:\Users\Alois Estermann\Desktop\ashton-project\ashton\obj\Debug\ashton.dll
+C:\Users\Alois Estermann\Desktop\ashton-project\ashton\obj\Debug\ashton.pdb

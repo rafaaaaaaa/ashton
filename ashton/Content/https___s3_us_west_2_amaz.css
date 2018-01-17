@@ -1,0 +1,127 @@
+// --------------------------------------------------
+// * { Box-sizing: Border-box } FTW
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+// --------------------------------------------------
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+// --------------------------------------------------
+// Flat UI Colors
+// http://flatuicolors.com/
+// --------------------------------------------------
+
+//greens
+$turquoise : #1abc9c;
+$green-sea : #16a085;
+$emerald   : #2ecc71;
+$nephrtis  : #27ae60;
+.bg--turquoise {
+  background: $turquoise; 
+}
+.bg--green-sea {
+  background: $green-sea; 
+}
+.bg--emerald {
+  background: $emerald; 
+}
+.bg--nephrtis {
+  background: $nephrtis; 
+}
+
+
+//blues
+$peter-river  : #3498db;
+$belize-hole  : #2980b9;
+$wet-asphalt  : #34495e;
+$midnight-blu : #2c3e50;
+.bg--peter-river {
+  background: $peter-river; 
+}
+.bg--belize-hole {
+  background: $belize-hole; 
+}
+.bg--midnight-blu {
+  background: $midnight-blu; 
+}
+.bg--midnight-blu {
+  background: $midnight-blu; 
+}
+
+//purple
+$amethyst : #9b59b6;
+$wisteria : #8e44ad;
+.bg--amethyst {
+  background: $amethyst; 
+}
+.bg--wisteria {
+  background: $wisteria; 
+}
+
+
+// orange
+$sun-flower : #f1c40f;
+$orange 	: #f39c12;
+$carrot 	: #e67e22;
+$pumpkin 	: #d35400;
+.bg--sun-flower {
+  background: $sun-flower; 
+}
+.bg--orange {
+  background: $orange; 
+}
+.bg--pumpkin {
+  background: $pumpkin; 
+}
+.bg--carrot {
+  background: $carrot; 
+}
+.bg--pumpkin {
+  background: $pumpkin; 
+}
+
+
+// red
+$alizarin : #e74c3c;
+$pomegranate : #c0392b;
+.bg--alizarin {
+  background: $alizarin; 
+}
+.bg--pomegranate {
+  background: $pomegranate; 
+}
+
+// lights
+$clouds 	: #ecf0f1;
+$silver 	: #bdc3c7;
+$concrete 	: #95a5a6;
+$asbestos 	: #7f8c8d;
+.bg--clouds {
+  background: $clouds; 
+}
+.bg--silver {
+  background: $silver; 
+}
+.bg--concrete {
+  background: $concrete; 
+}
+.bg--asbestos {
+  background: $asbestos; 
+}
+
+// darks
+$dark : #222222;
+$dark_light : #393433;
+
+
+.bg--dark {
+  background: $dark; 
+}
+.bg--dark_light {
+  background: $dark_light; 
+}

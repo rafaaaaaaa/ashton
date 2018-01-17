@@ -4,30 +4,62 @@
 <head>
   <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/Layout.css")"/>
   <script src="https://use.fontawesome.com/8a31748523.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
+<script>  
+        $(document).ready(function () {
+            $(window).resize(function () {
+
+                var windowWidth = $(window).width();
+                if (($(window).width()) < '1750') {
+                    $('#menupoints').css('display', 'none');
+                    $('.dropdown').css('display', 'block');
+                } else {
+                    $('#menupoints').css('display', 'block');
+                    $('.dropdown').css('display', 'none');
+                } 
+
+            });
+        });
+</script>
+
 <body>
   <div class="Menubar">
     <div class="ashtonmenubar">
       <div class="menucenterdiv">
       <div id="logo"></div>
-        <div id="menupoints">
+       
+       <div id="menupoints">
           <div class="menu">
-            <div class="btn"><i class="fa fa-home" aria-hidden="true"></i>Work
+            <div class="btn"><i class="fa fa-home" aria-hidden="true"></i>work
             </div>
-            <div class="btn"><i class="fa fa-address-book-o" aria-hidden="true"></i>Partners
+            <div class="btn"><i class="fa fa-address-book-o" aria-hidden="true"></i>partners
             </div>
-            <div class="btn"><i class="fa fa-user-circle" aria-hidden="true"></i>Account
+            <div class="btn"><i class="fa fa-user-circle" aria-hidden="true"></i>account
             </div>
-            <div class="btn"><i class="fa fa-cog" aria-hidden="true"></i>Settings
+            <div class="btn"><i class="fa fa-cog" aria-hidden="true"></i>settings
             </div>
           </div>
         </div>
+
+          <div class="dropdown">
+              <button class="dropbtn"><i class="fa fa-bars fa-4x" aria-hidden="true"></i></button>
+              <div class="dropdown-content">
+                  <div class="btn"><i class="fa fa-home" aria-hidden="true"></i>Work</div>
+                  <div class="btn"><i class="fa fa-address-book-o" aria-hidden="true"></i>Partners</div>
+                  <div class="btn"><i class="fa fa-user-circle" aria-hidden="true"></i>Account</div>
+                  <div class="btn"><i class="fa fa-cog" aria-hidden="true"></i>Settings</div>
+              </div>
+          </div>    
         </div>
     </div>
   </div>
+
   @RenderBody()
-  <div class="footer"></div>
+  <div id="footer"></div>
 </body>
+
 
 </html>
 
